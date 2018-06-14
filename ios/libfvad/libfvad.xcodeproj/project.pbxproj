@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F80279A020D1EFC100D86E2D /* fvad.c in Sources */ = {isa = PBXBuildFile; fileRef = F802799F20D1EFC100D86E2D /* fvad.c */; };
+		F8B2D28120D1F03800490C44 /* resample_48khz.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27820D1F03800490C44 /* resample_48khz.c */; };
+		F8B2D28220D1F03800490C44 /* division_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27920D1F03800490C44 /* division_operations.c */; };
+		F8B2D28320D1F03800490C44 /* energy.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27A20D1F03800490C44 /* energy.c */; };
+		F8B2D28420D1F03800490C44 /* get_scaling_square.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27B20D1F03800490C44 /* get_scaling_square.c */; };
+		F8B2D28520D1F03800490C44 /* resample_by_2_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27C20D1F03800490C44 /* resample_by_2_internal.c */; };
+		F8B2D28620D1F03800490C44 /* spl_inl.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27E20D1F03800490C44 /* spl_inl.c */; };
+		F8B2D28720D1F03800490C44 /* resample_fractional.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D27F20D1F03800490C44 /* resample_fractional.c */; };
+		F8B2D29020D1F04300490C44 /* vad_gmm.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D28820D1F04300490C44 /* vad_gmm.c */; };
+		F8B2D29120D1F04300490C44 /* vad_sp.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D28B20D1F04300490C44 /* vad_sp.c */; };
+		F8B2D29220D1F04300490C44 /* vad_filterbank.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D28D20D1F04300490C44 /* vad_filterbank.c */; };
+		F8B2D29320D1F04300490C44 /* vad_core.c in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D28F20D1F04300490C44 /* vad_core.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F802799220D1EF8700D86E2D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F802799420D1EF8700D86E2D /* liblibfvad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibfvad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F802799E20D1EFC100D86E2D /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../../../src/common.h; sourceTree = "<group>"; };
+		F802799F20D1EFC100D86E2D /* fvad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fvad.c; path = ../../../src/fvad.c; sourceTree = "<group>"; };
+		F8B2D27720D1F03800490C44 /* resample_by_2_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resample_by_2_internal.h; path = ../../../src/signal_processing/resample_by_2_internal.h; sourceTree = "<group>"; };
+		F8B2D27820D1F03800490C44 /* resample_48khz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = resample_48khz.c; path = ../../../src/signal_processing/resample_48khz.c; sourceTree = "<group>"; };
+		F8B2D27920D1F03800490C44 /* division_operations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = division_operations.c; path = ../../../src/signal_processing/division_operations.c; sourceTree = "<group>"; };
+		F8B2D27A20D1F03800490C44 /* energy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = energy.c; path = ../../../src/signal_processing/energy.c; sourceTree = "<group>"; };
+		F8B2D27B20D1F03800490C44 /* get_scaling_square.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = get_scaling_square.c; path = ../../../src/signal_processing/get_scaling_square.c; sourceTree = "<group>"; };
+		F8B2D27C20D1F03800490C44 /* resample_by_2_internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = resample_by_2_internal.c; path = ../../../src/signal_processing/resample_by_2_internal.c; sourceTree = "<group>"; };
+		F8B2D27D20D1F03800490C44 /* signal_processing_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = signal_processing_library.h; path = ../../../src/signal_processing/signal_processing_library.h; sourceTree = "<group>"; };
+		F8B2D27E20D1F03800490C44 /* spl_inl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = spl_inl.c; path = ../../../src/signal_processing/spl_inl.c; sourceTree = "<group>"; };
+		F8B2D27F20D1F03800490C44 /* resample_fractional.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = resample_fractional.c; path = ../../../src/signal_processing/resample_fractional.c; sourceTree = "<group>"; };
+		F8B2D28020D1F03800490C44 /* spl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spl_inl.h; path = ../../../src/signal_processing/spl_inl.h; sourceTree = "<group>"; };
+		F8B2D28820D1F04300490C44 /* vad_gmm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vad_gmm.c; path = ../../../src/vad/vad_gmm.c; sourceTree = "<group>"; };
+		F8B2D28920D1F04300490C44 /* vad_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vad_core.h; path = ../../../src/vad/vad_core.h; sourceTree = "<group>"; };
+		F8B2D28A20D1F04300490C44 /* vad_filterbank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vad_filterbank.h; path = ../../../src/vad/vad_filterbank.h; sourceTree = "<group>"; };
+		F8B2D28B20D1F04300490C44 /* vad_sp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vad_sp.c; path = ../../../src/vad/vad_sp.c; sourceTree = "<group>"; };
+		F8B2D28C20D1F04300490C44 /* vad_sp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vad_sp.h; path = ../../../src/vad/vad_sp.h; sourceTree = "<group>"; };
+		F8B2D28D20D1F04300490C44 /* vad_filterbank.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vad_filterbank.c; path = ../../../src/vad/vad_filterbank.c; sourceTree = "<group>"; };
+		F8B2D28E20D1F04300490C44 /* vad_gmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vad_gmm.h; path = ../../../src/vad/vad_gmm.h; sourceTree = "<group>"; };
+		F8B2D28F20D1F04300490C44 /* vad_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vad_core.c; path = ../../../src/vad/vad_core.c; sourceTree = "<group>"; };
+		F8B2D29520D1F10700490C44 /* fvad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fvad.h; path = ../../../include/fvad.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F802799120D1EF8700D86E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F802798B20D1EF8700D86E2D = {
+			isa = PBXGroup;
+			children = (
+				F802799620D1EF8700D86E2D /* libfvad */,
+				F802799520D1EF8700D86E2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F802799520D1EF8700D86E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F802799420D1EF8700D86E2D /* liblibfvad.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F802799620D1EF8700D86E2D /* libfvad */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2D29420D1F10100490C44 /* include */,
+				F802799E20D1EFC100D86E2D /* common.h */,
+				F802799F20D1EFC100D86E2D /* fvad.c */,
+				F8B2D27620D1F02A00490C44 /* signal_processing */,
+				F8B2D27520D1F01D00490C44 /* vad */,
+			);
+			path = libfvad;
+			sourceTree = "<group>";
+		};
+		F8B2D27520D1F01D00490C44 /* vad */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2D28F20D1F04300490C44 /* vad_core.c */,
+				F8B2D28920D1F04300490C44 /* vad_core.h */,
+				F8B2D28D20D1F04300490C44 /* vad_filterbank.c */,
+				F8B2D28A20D1F04300490C44 /* vad_filterbank.h */,
+				F8B2D28820D1F04300490C44 /* vad_gmm.c */,
+				F8B2D28E20D1F04300490C44 /* vad_gmm.h */,
+				F8B2D28B20D1F04300490C44 /* vad_sp.c */,
+				F8B2D28C20D1F04300490C44 /* vad_sp.h */,
+			);
+			name = vad;
+			sourceTree = "<group>";
+		};
+		F8B2D27620D1F02A00490C44 /* signal_processing */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2D27920D1F03800490C44 /* division_operations.c */,
+				F8B2D27A20D1F03800490C44 /* energy.c */,
+				F8B2D27B20D1F03800490C44 /* get_scaling_square.c */,
+				F8B2D27820D1F03800490C44 /* resample_48khz.c */,
+				F8B2D27C20D1F03800490C44 /* resample_by_2_internal.c */,
+				F8B2D27720D1F03800490C44 /* resample_by_2_internal.h */,
+				F8B2D27F20D1F03800490C44 /* resample_fractional.c */,
+				F8B2D27D20D1F03800490C44 /* signal_processing_library.h */,
+				F8B2D27E20D1F03800490C44 /* spl_inl.c */,
+				F8B2D28020D1F03800490C44 /* spl_inl.h */,
+			);
+			name = signal_processing;
+			sourceTree = "<group>";
+		};
+		F8B2D29420D1F10100490C44 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2D29520D1F10700490C44 /* fvad.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F802799320D1EF8700D86E2D /* libfvad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F802799B20D1EF8700D86E2D /* Build configuration list for PBXNativeTarget "libfvad" */;
+			buildPhases = (
+				F802799020D1EF8700D86E2D /* Sources */,
+				F802799120D1EF8700D86E2D /* Frameworks */,
+				F802799220D1EF8700D86E2D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libfvad;
+			productName = libfvad;
+			productReference = F802799420D1EF8700D86E2D /* liblibfvad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F802798C20D1EF8700D86E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "akihiro uehara";
+				TargetAttributes = {
+					F802799320D1EF8700D86E2D = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = F802798F20D1EF8700D86E2D /* Build configuration list for PBXProject "libfvad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F802798B20D1EF8700D86E2D;
+			productRefGroup = F802799520D1EF8700D86E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F802799320D1EF8700D86E2D /* libfvad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F802799020D1EF8700D86E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80279A020D1EFC100D86E2D /* fvad.c in Sources */,
+				F8B2D29220D1F04300490C44 /* vad_filterbank.c in Sources */,
+				F8B2D29320D1F04300490C44 /* vad_core.c in Sources */,
+				F8B2D28520D1F03800490C44 /* resample_by_2_internal.c in Sources */,
+				F8B2D28420D1F03800490C44 /* get_scaling_square.c in Sources */,
+				F8B2D28620D1F03800490C44 /* spl_inl.c in Sources */,
+				F8B2D29120D1F04300490C44 /* vad_sp.c in Sources */,
+				F8B2D28320D1F03800490C44 /* energy.c in Sources */,
+				F8B2D28120D1F03800490C44 /* resample_48khz.c in Sources */,
+				F8B2D28220D1F03800490C44 /* division_operations.c in Sources */,
+				F8B2D28720D1F03800490C44 /* resample_fractional.c in Sources */,
+				F8B2D29020D1F04300490C44 /* vad_gmm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F802799920D1EF8700D86E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F802799A20D1EF8700D86E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F802799C20D1EF8700D86E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RPD2RKGX8;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "libfvad-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F802799D20D1EF8700D86E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RPD2RKGX8;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "libfvad-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F802798F20D1EF8700D86E2D /* Build configuration list for PBXProject "libfvad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F802799920D1EF8700D86E2D /* Debug */,
+				F802799A20D1EF8700D86E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F802799B20D1EF8700D86E2D /* Build configuration list for PBXNativeTarget "libfvad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F802799C20D1EF8700D86E2D /* Debug */,
+				F802799D20D1EF8700D86E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F802798C20D1EF8700D86E2D /* Project object */;
+}
